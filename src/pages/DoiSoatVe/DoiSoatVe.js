@@ -6,7 +6,6 @@ import { data } from '../../data';
 
 export default function DoiSoatVe() {
     const newData = data.filter(item => item.checked === false)
-    console.log({ newData });
     const renderDanhSachVe = () => {
         return newData.map((item, index) => {
             console.log({ item });
@@ -54,7 +53,7 @@ export default function DoiSoatVe() {
                 </div>
                 <div className="flex button-content">
 
-                    <button className="export">Chốt đối soát</button>
+                    <button className="checked">Chốt đối soát</button>
                 </div>
             </div>
 

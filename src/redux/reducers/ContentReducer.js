@@ -4,7 +4,7 @@ export const OPEN_CONTENT = "OPEN_CONTENT"
 
 const stateDefault = {
     Component: <p> Nội dung mặc định</p>,
-    ComponentDefault: <HomePage />
+    // ComponentDefault: <HomePage />
 }
 
 export const ContentReducer = (state = stateDefault, action) => {

@@ -3,6 +3,7 @@ import { AiOutlineCalendar } from 'react-icons/ai';
 import ChartEvent from '../../../components/Chart Event/ChartEvent';
 import ChartFamily from '../../../components/Chart Family/ChartFamily';
 import ChartAria from '../../../components/Chart/Chart';
+import ChartTest from '../../../components/Chart/ChartTest';
 import "../HomeContent/HomeContent.css"
 
 
@@ -25,7 +26,8 @@ export default function HomeContent() {
             </div>
             <div className='flex gap-6 mx-5'>
                 <div className='w-full shape'>
-                    <ChartAria />
+                    {/* <ChartAria /> */}
+                    <ChartTest />
                 </div>
             </div>
             <div className='mt-4 ml-10'>

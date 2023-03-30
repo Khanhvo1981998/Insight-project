@@ -7,14 +7,12 @@ import { data } from "../../data";
 
 export default function QuanLyVe() {
 
-    console.log({ data });
 
     const renderDanhSachVe = () => {
         return data.map((item, index) => {
-            console.log({ item });
             return (
                 <>
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <tr key={index} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <td scope="row" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap ">
                             {item.stt}
                         </td>
@@ -61,8 +59,8 @@ export default function QuanLyVe() {
                 </div>
                 <div className="flex button-content">
                     <button className="flex items-center justify-center mr-2 filter">
-                        <div><FilterOutlined className='mx-1' /></div>
-                        <div className='mx-2'><span> Lọc vé</span></div>
+                        <span><FilterOutlined className='mx-1' /></span>
+                        <span className='mx-2'><span> Lọc vé</span></span>
 
                     </button>
                     <button className="export">Xuất file(.csv)</button>

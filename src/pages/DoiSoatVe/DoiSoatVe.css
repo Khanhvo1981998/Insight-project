@@ -26,10 +26,9 @@
   height: 48px;
 }
 
-.ticket-checked .button-content .filter,
-.export {
+.ticket-checked .button-content .checked {
   border: 1px solid #ff993b;
-  border-radius: 3px;
+  border-radius: 10px;
   font-size: 15px;
   padding: 0 23px;
   color: white;

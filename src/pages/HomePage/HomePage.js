@@ -16,6 +16,8 @@ import DoiSoatVe from '../DoiSoatVe/DoiSoatVe';
 import { useDispatch } from 'react-redux';
 import ContentHOC from '../../HOC/ContentHOC';
 import QuanLyVe from '../QuanLyVePage/QuanLyVe';
+import Login from '../LoginPage/Login';
+import Test from '../LoginPage/Test';
 
 
 
@@ -55,7 +57,6 @@ export default function HomePage() {
                                                 Component: <QuanLyVe />
                                             }
                                             dispatch(action)
-                                            console.log({ action });
 
                                         }}
                                         className='flex my-2 ml-1 mr-20 logo-item' href=""><HiOutlineTicket className='icon' /> Quản lý vé</a></li>
@@ -100,6 +101,7 @@ export default function HomePage() {
                                         }}
                                         className='flex my-2 ml-1 mr-20 logo-item' href=""><AiOutlineSetting className='icon' />Cài đặt</a></li>
 
+
                                 </ul>
                             </div>
                         </div>
@@ -116,7 +118,8 @@ export default function HomePage() {
                             <div className='flex items-center gap-4 text-3xl'>
                                 <FiMail />
                                 <IoMdNotificationsOutline />
-                                <Avatar size="large" icon={<UserOutlined />} />
+
+                                <Login />
                             </div>
 
                         </div>
